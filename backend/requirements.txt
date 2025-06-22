@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+python-multipart
+PyPDF2
+google-generativeai  # if using Gemini
+python-decouple
