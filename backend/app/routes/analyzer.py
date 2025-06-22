@@ -1,9 +1,9 @@
 # routes/resume_routes.py
 from fastapi import APIRouter, UploadFile, Form, HTTPException
 from typing import Optional
-from ..services.resume_ai import extract_text_from_pdf, analyze_resume_with_ai
-from ..models import ResumeAnalysis
-from ..database import SessionLocal
+from services.resume_ai import extract_text_from_pdf, analyze_resume_with_ai
+from models import ResumeAnalysis
+from database import SessionLocal
 
 router = APIRouter()
 
@@ -33,3 +33,4 @@ async def analyze_resume(resume: UploadFile, job_description: Optional[str] = Fo
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    

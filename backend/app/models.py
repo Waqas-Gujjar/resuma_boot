@@ -1,6 +1,5 @@
-# models.py
 from sqlalchemy import Column, Integer, Text
-from .database import Base
+from database import Base
 
 class ResumeAnalysis(Base):
     __tablename__ = "resume_analysis"
@@ -9,5 +8,5 @@ class ResumeAnalysis(Base):
     resume_text = Column(Text)
     job_description = Column(Text)
     feedback = Column(Text)
-    optimized_resume = Column(Text)  # ✅ New
-    cover_letter = Column(Text)      # ✅ New
+    optimized_resume = Column(Text)          # ✅ NEW
+    cover_letter = Column(Text)              # ✅ NEW

@@ -6,6 +6,7 @@ __pycache__/
 # C extensions
 *.so
 .DS_Store
+.compose.env
 
 # Distribution / packaging
 .Python
